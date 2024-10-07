@@ -101,8 +101,8 @@ Este repositorio recopila materiales útiles para aprender, practicar y mejorar 
 
 ## 🛠️ Recursos
 
-- [VSCode](/recursos/VSCode.md)
-- [Snippets]()
+- [Visual Studio Code](/recursos/vscode.md)
+- [Snippets](/recursos/snippets.md)
 
 ---
 
