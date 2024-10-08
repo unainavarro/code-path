@@ -29,7 +29,11 @@ Este repositorio recopila materiales útiles para aprender, practicar y mejorar 
 <details>
   <summary>📁 Bloque 1: Fundamentos</summary>
   <ul>
-    <li><a href="">Introducción</a></li>
+    <li><a href="https://github.com/unainavarro/code-path/blob/main/html/01-fundamentos/01-introduccion.md">Introducción</a></li>
+    <li><a href="https://github.com/unainavarro/code-path/blob/main/html/01-fundamentos/02-etiquetas.md">Etiquetas</a></li>
+    <li><a href="https://github.com/unainavarro/code-path/blob/main/html/01-fundamentos/03-atributos.md">Atributos</a></li>
+    <li><a href="https://github.com/unainavarro/code-path/blob/main/html/01-fundamentos/04-elementos.md">Elementos</a></li>
+    <li><a href="https://github.com/unainavarro/code-path/blob/main/html/01-fundamentos/05-comportamiento.md">Comportamiento</a></li>
   </ul>  
 </details>
 <!-- [FIN]Fundamentos -->
