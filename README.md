@@ -100,7 +100,6 @@ Este repositorio recopila materiales útiles para aprender, practicar y mejorar 
 ## 🧑‍💻 Ejercicios (Mis soluciones)
 
 - [Front-End Mentor]()
-- [W3 Resources]()
 - [Edabit]()
 
 ## 🛠️ Recursos
