@@ -42,7 +42,11 @@ Este repositorio recopila materiales útiles para aprender, practicar y mejorar 
 <details>
   <summary>📁 Bloque 2: Cabecera</summary>
   <ul>
-    <li><a href="">Introducción</a></li>
+    <li><a href="https://github.com/unainavarro/code-path/blob/main/html/02-cabeceras/01-head.md">head</a></li>
+    <li><a href="https://github.com/unainavarro/code-path/blob/main/html/02-cabeceras/02-meta.md">meta</a></li>
+    <li><a href="https://github.com/unainavarro/code-path/blob/main/html/02-cabeceras/03-link.md">link</a></li>
+    <li><a href="https://github.com/unainavarro/code-path/blob/main/html/02-cabeceras/04-script.md">script</a></li>
+    <li><a href="https://github.com/unainavarro/code-path/blob/main/html/02-cabeceras/05-favicon.md">favicon</a></li>
   </ul>  
 </details>
 <!-- [FIN]Cabecera -->
