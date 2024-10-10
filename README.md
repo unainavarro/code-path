@@ -59,7 +59,13 @@ Este repositorio recopila materiales útiles para aprender, practicar y mejorar 
         <details>
           <summary>Textos</summary>
           <ul>
-            <li><a href="">Introducción</a></li>
+            <li><a href="https://github.com/unainavarro/code-path/blob/main/html/03-elementos/01-textos/01-encabezados.md">Encabezados</a></li>
+            <li><a href="https://github.com/unainavarro/code-path/blob/main/html/03-elementos/01-textos/02-parrafos.md">Párrafos</a></li>
+            <li><a href="https://github.com/unainavarro/code-path/blob/main/html/03-elementos/01-textos/03-formato.md"></a>Formato y Enriquecimiento del texto</li>
+            <li><a href="https://github.com/unainavarro/code-path/blob/main/html/03-elementos/01-textos/04-direccion.md">Dirección de texto</a></li>
+            <li><a href="https://github.com/unainavarro/code-path/blob/main/html/03-elementos/01-textos/05-referencias.md">Referencias</a></li>
+            <li><a href="https://github.com/unainavarro/code-path/blob/main/html/03-elementos/01-textos/06-acronimos_entidades.md">Acrónimos y Entidades</a></li>
+            <li><a href="https://github.com/unainavarro/code-path/blob/main/html/03-elementos/01-textos/07-representacion.md">Representación de Código y Comentarios</a></li>
           </ul>
         </details>
       </li>

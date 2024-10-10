@@ -1,15 +1,15 @@
-<h1 align='center'>Representación de Código y Comentarios en HTML</h1>
+<h1 align='center'>Representación de Código y Comentarios</h1>
 
 <h2>📑 Contenido</h2>
 
-- [Representación de Código y Comentarios en HTML](#representación-de-código-y-comentarios-en-html)
+- [Representación de Código y Comentarios](#representación-de-código-y-comentarios)
 - [`<code>` – Representación de Código en Línea](#code--representación-de-código-en-línea)
 - [`<pre>` – Texto Preformateado](#pre--texto-preformateado)
 - [`<kbd>` – Representación de Entrada del Teclado](#kbd--representación-de-entrada-del-teclado)
 - [`<samp>` – Representación de Salida del Sistema](#samp--representación-de-salida-del-sistema)
 - [Comentarios en HTML](#comentarios-en-html)
 
-## Representación de Código y Comentarios en HTML
+## Representación de Código y Comentarios
 
 En el desarrollo web, es frecuente la necesidad de mostrar fragmentos de código o texto relacionado con comandos y scripts, así como agregar comentarios dentro del código HTML que no serán visibles para los usuarios finales. HTML proporciona varias etiquetas semánticas diseñadas para representar código en pantalla, permitiendo que se vea de forma clara y legible. Además, los comentarios en HTML ayudan a los desarrolladores a documentar su trabajo sin interferir con el contenido visible de la página.
 
