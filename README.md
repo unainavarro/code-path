@@ -51,14 +51,29 @@ Este repositorio recopila materiales útiles para aprender, practicar y mejorar 
 </details>
 <!-- [FIN]Cabecera -->
 
-<!-- Elementos -->
-<details>
-  <summary>📁 Bloque 3: Elementos</summary>
-  <ul>
-    <li><a href="">Introducción</a></li>
-  </ul>  
-</details>
-<!-- [FIN]Elementos -->
+  <!-- Elementos -->
+  <details>
+    <summary>📁 Bloque 3: Elementos</summary>
+    <ul style="list-style:none">
+      <li >
+        <details>
+          <summary>Textos</summary>
+          <ul>
+            <li><a href="">Introducción</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>Listas</summary>
+          <ul>
+            <li><a href="">Introducción</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </details>
+  <!-- [FIN]Elementos -->
 
 <!-- BuenasPracticas -->
 <details>
