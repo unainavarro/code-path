@@ -7,7 +7,6 @@
 - [`<blockquote>` – Citas en Bloque](#blockquote--citas-en-bloque)
 - [`<q>` – Citas en Línea](#q--citas-en-línea)
 - [`<cite>` – Referencias a Títulos de Obras](#cite--referencias-a-títulos-de-obras)
-- [`<dfn>` – Definiciones](#dfn--definiciones)
 - [Atributo datetime – Fechas y Tiempos](#atributo-datetime--fechas-y-tiempos)
   - [`<time>` – Fechas y horas](#time--fechas-y-horas)
   - [`<del>` y `<ins>` – Cambios en el contenido con fecha](#del-y-ins--cambios-en-el-contenido-con-fecha)
@@ -66,19 +65,6 @@ La etiqueta `<cite>` se utiliza para hacer referencia a títulos de obras como l
 ```
 
 Es importante recordar que `<cite>` debe utilizarse para títulos de obras completas, no para citas de otros textos. También puede combinarse con otras etiquetas, como `<blockquote>`, para dar contexto a las fuentes de citas.
-
-## `<dfn>` – Definiciones
-
-La etiqueta `<dfn>` se utiliza para marcar la primera aparición de una definición en el contenido. Esto es útil cuando necesitas resaltar un término que está siendo definido dentro de un párrafo.
-
-```html
-<p>
-  El término <dfn>hipertexto</dfn> se refiere a la estructura que permite la
-  interconexión de diferentes textos a través de enlaces.
-</p>
-```
-
-En este ejemplo, `<dfn>` resalta el término "hipertexto", señalando que se está introduciendo o definiendo en el texto.
 
 ## Atributo datetime – Fechas y Tiempos
 
