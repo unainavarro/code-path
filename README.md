@@ -15,7 +15,7 @@ Este repositorio recopila materiales útiles para aprender, practicar y mejorar 
 
 ## 🦉 Aprender
 
-- [Mis Apuntes]()
+- [Mis Apuntes](https://github.com/unainavarro/apuntes)
 
 ---
 
