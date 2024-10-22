@@ -26,9 +26,9 @@ Este repositorio recopila materiales útiles para aprender, practicar y mejorar 
 
 ## 🛠️ Recursos
 
-- [Visual Studio Code](/recursos/vscode.md)
-- [Snippets](/recursos/snippets.md)
-- [Links](/recursos/links.md)
+- [Visual Studio Code](https://github.com/unainavarro/code-path/blob/main/recursos/VSCode.md)
+- [Snippets](https://github.com/unainavarro/code-path/blob/main/recursos/snippets.md)
+- [Links](https://github.com/unainavarro/code-path/blob/main/recursos/links.md)
 
 ---
 
