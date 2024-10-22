@@ -28,6 +28,7 @@ Este repositorio recopila materiales útiles para aprender, practicar y mejorar 
 
 - [Visual Studio Code](/recursos/vscode.md)
 - [Snippets](/recursos/snippets.md)
+- [Links](/recursos/links.md)
 
 ---
 
