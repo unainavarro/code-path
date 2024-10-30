@@ -1,0 +1,40 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Information from "../../components/Information.astro";
+import Projects from "../../components/Projects.astro";
+import Footer from "../../components/Footer.astro";
+import Card from "../../components/Card.astro";
+---
+
+<Layout title="JavaScript">
+  <Header
+    src="../../../public/img/js.svg"
+    alt="javascript logo"
+    title="Proyectos de "
+    language="JavaScript"
+  />
+  <Information
+    title="Aprende "
+    language="JavaScript"
+    body=`Aprende TypeScript atraves de proyectos en el readme de cada proyecto encontraras los pasos...
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+  Quaerat eligendi doloribus obcaecati corrupti voluptatem assumenda excepturi architecto, expedita, officiis totam nesciunt veniam aut numquam consequuntur blanditiis temporibus quod, deleniti ratione`
+  />
+  <Projects title="Proyectos" subTitle="(entorno Web)">
+    <Card
+      img
+      src=""
+      alt="muestra del proyecto"
+      title="JavaScript"
+      description="Aprende JavaScript mediante la realización de proyectos"
+      firstBtn
+      firstBtnHref="#"
+      firstBtnText="Demo"
+      secondBtn
+      secondBtnHref="#"
+      secondBtnText="Github"
+    />
+  </Projects>
+  <Footer />
+</Layout>

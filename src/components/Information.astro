@@ -1,0 +1,31 @@
+---
+interface Props {
+  title: string;
+  language?: string;
+  body: string;
+}
+
+const { title, language, body } = Astro.props;
+---
+
+<div class="information container">
+  <h1>{title} {language && <span class="language">{language}</span>}</h1>
+  <p class="information-text">
+    {body}
+  </p>
+</div>
+
+<style>
+  .information {
+    margin-top: calc(40px + 2rem);
+  }
+
+  .information h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .information-text {
+    line-height: 1.2;
+  }
+</style>
