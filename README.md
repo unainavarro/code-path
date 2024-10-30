@@ -12,6 +12,7 @@ Este repositorio recopila materiales útiles para aprender, practicar y mejorar 
 - [🦉 Aprender](#-aprender)
 - [🧑‍💻 Ejercicios (Mis soluciones)](#-ejercicios-mis-soluciones)
 - [🛠️ Recursos](#️-recursos)
+- [🚀 Comandos](#-comandos)
 
 ## 🦉 Aprender
 
@@ -29,6 +30,21 @@ Este repositorio recopila materiales útiles para aprender, practicar y mejorar 
 - [Visual Studio Code](https://github.com/unainavarro/code-path/blob/main/recursos/VSCode.md)
 - [Snippets](https://github.com/unainavarro/code-path/blob/main/recursos/snippets.md)
 - [Links](https://github.com/unainavarro/code-path/blob/main/recursos/links.md)
+
+---
+
+## 🚀 Comandos
+
+Todos los comandos se ejecutan desde la raíz del proyecto, desde una terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 ---
 
