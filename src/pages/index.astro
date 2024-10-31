@@ -5,30 +5,58 @@ import Information from "../components/Information.astro";
 import Projects from "../components/Projects.astro";
 import Footer from "../components/Footer.astro";
 import Card from "../components/Card.astro";
+import List from "../components/List.astro";
 ---
 
 <Layout title="Code-Path">
-  <Header
-    src="../public/img/logo-black.svg"
-    alt="code logo"
-    title="Code Path"
-  />
-  <Information
-    title="¿Qué encontraras?"
-    body=`Code Path es una web que recopila materiales útiles para aprender, 
+  <Header src="/img/logos/logo-black.svg" alt="code logo" title="Code Path" />
+  <div class="bg-grid">
+    <Information
+      title="¿Qué encontraras?"
+      body=`Code Path es una web que recopila materiales útiles para aprender, 
 	practicar y mejorar en programación. 
 	Aquí encontrarás una combinación de apuntes teóricos, 
 	ejercicios prácticos y recursos adicionales que cubren una amplia variedad de temas relacionados con el desarrollo de software.`
-  />
-  <Projects title="Temas">
-    <Card
-      title="JavaScript"
-      description="Aprende JavaScript mediante la realización de proyectos"
-      firstBtn
-      firstBtnHref="projects/javascript"
-      firstBtnText="Empezar"
     />
-  </Projects>
+    <List />
+    <Projects title="Proyectos">
+      <Card
+        title="HTML y CSS"
+        description="Aprende HTML y CSS mediante la realización de proyectos"
+        firstBtn
+        firstBtnHref="projects/html_css"
+        firstBtnText="Empezar"
+      />
+      <Card
+        title="JavaScript"
+        description="Aprende JavaScript mediante la realización de proyectos"
+        firstBtn
+        firstBtnHref="projects/javascript"
+        firstBtnText="Empezar"
+      />
+      <Card
+        title="Angular"
+        description="Aprende Angular mediante la realización de proyectos"
+        firstBtn
+        firstBtnHref="projects/"
+        firstBtnText="Empezar"
+      />
+      <Card
+        title="Bases de datos"
+        description="Aprende BBDD mediante la realización de proyectos"
+        firstBtn
+        firstBtnHref="projects/"
+        firstBtnText="Empezar"
+      />
+      <Card
+        title="Java"
+        description="Aprende Java mediante la realización de proyectos"
+        firstBtn
+        firstBtnHref="projects/"
+        firstBtnText="Empezar"
+      />
+    </Projects>
+  </div>
 
   <Footer />
 </Layout>

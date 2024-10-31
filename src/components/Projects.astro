@@ -7,13 +7,13 @@ interface Props {
 const { title, subTitle } = Astro.props;
 ---
 
-<main class="projects container">
+<div class="projects container">
   <h2 class="project-title">{title} <span>{subTitle}</span></h2>
 
   <div class="project-list">
     <slot />
   </div>
-</main>
+</div>
 
 <style>
   .project-title {

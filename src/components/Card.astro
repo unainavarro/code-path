@@ -64,6 +64,13 @@ const {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     position: relative;
+    transition: background-color ease-in-out 0.4s;
+  }
+
+  .card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+    transition: 0.2s linear;
   }
 
   .card-image img {
@@ -73,10 +80,10 @@ const {
     transition: transform ease-in-out 0.4s;
   }
 
-  .card-image img:hover {
+  /* .card-image img:hover {
     transform: scale(1.1);
     cursor: pointer;
-  }
+  } */
 
   .card-description {
     padding: 1rem;

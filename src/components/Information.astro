@@ -6,18 +6,31 @@ interface Props {
 }
 
 const { title, language, body } = Astro.props;
+
+const languageStyles = {
+  css: "language-css",
+  javascript: "language-js",
+  java: "language-java",
+};
+const languageClass = language
+  ? languageStyles[language.toLowerCase()] || ""
+  : "";
 ---
 
-<div class="information container">
-  <h1>{title} {language && <span class="language">{language}</span>}</h1>
-  <p class="information-text">
-    {body}
-  </p>
+<div class="information">
+  <div class="container">
+    <h1>
+      {title}
+      {language && <span class={`language ${languageClass}`}>{language}</span>}
+    </h1>
+    <p class="information-text">
+      {body}
+    </p>
+  </div>
 </div>
-
 <style>
   .information {
-    margin-top: calc(40px + 2rem);
+    padding-top: calc(40px + 2rem);
   }
 
   .information h1 {
@@ -27,5 +40,21 @@ const { title, language, body } = Astro.props;
 
   .information-text {
     line-height: 1.2;
+  }
+  /* Estilos para los lenguajes */
+  .language {
+    font-weight: 900;
+  }
+
+  .language-js {
+    color: #f0db4f;
+  }
+
+  .language-css {
+    color: blue;
+  }
+
+  .language-java {
+    color: green;
   }
 </style>
