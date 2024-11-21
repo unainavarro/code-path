@@ -17,12 +17,23 @@ import Card from "../../components/Card.astro";
     <Information
       title="Aprende"
       language="CSS"
-      body=`Aprende TypeScript atraves de proyectos en el readme de cada proyecto encontraras los pasos...
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-  Quaerat eligendi doloribus obcaecati corrupti voluptatem assumenda excepturi architecto, expedita, officiis totam nesciunt veniam aut numquam consequuntur blanditiis temporibus quod, deleniti ratione`
+      body=`Aprende HTML y CSS a través de proyectos. En el README de cada proyecto, encontrarás los pasos....`
     />
-    <Projects title="HTML - CSS">
+    <Projects title="CSS" subTitle="(Vanilla)">
       <Card
+        img
+        src="../../../public/img/projects/css/login.png"
+        alt="Componente de inicio de sesión"
+        title="Login"
+        description="Formulario de registro básico."
+        firstBtn
+        firstBtnHref="https://unainavarro.github.io/learn-css/projects/login/index.html"
+        firstBtnText="Demo"
+        secondBtn
+        secondBtnHref="https://github.com/unainavarro/learn-css/tree/main/projects/login"
+        secondBtnText="GitHub"
+      />
+      <!-- <Card
         img
         src="../../../public/img/projects/default.png"
         alt="muestra del proyecto"
@@ -34,7 +45,7 @@ import Card from "../../components/Card.astro";
         secondBtn
         secondBtnHref="#"
         secondBtnText="Github"
-      />
+      /> -->
     </Projects>
   </div>
 
