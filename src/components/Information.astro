@@ -3,9 +3,10 @@ interface Props {
   title: string;
   language?: string;
   body: string;
+  p?: string;
 }
 
-const { title, language, body } = Astro.props;
+const { title, language, body, p } = Astro.props;
 
 const languageStyles = {
   css: "language-css",
@@ -26,6 +27,9 @@ const languageClass = language
     <p class="information-text">
       {body}
     </p>
+    <p class="information-text">
+      {p}
+    </p>
   </div>
 </div>
 <style>
@@ -40,6 +44,9 @@ const languageClass = language
 
   .information-text {
     line-height: 1.2;
+    margin-bottom: 10px;
+    max-width: 1150px;
+    text-wrap: pretty;
   }
   /* Estilos para los lenguajes */
   .language {
