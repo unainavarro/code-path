@@ -1,0 +1,134 @@
+---
+interface Props {
+  img?: boolean;
+  src?: string;
+  alt?: string;
+  title: string;
+  description: string;
+  firstBtn?: boolean;
+  firstBtnText?: string;
+  firstBtnHref?: string;
+  secondBtn?: boolean;
+  secondBtnText?: string;
+  secondBtnHref?: string;
+  disabled?: boolean;
+}
+
+const {
+  img = false,
+  src,
+  alt,
+  title,
+  description,
+  firstBtn = false,
+  firstBtnText,
+  firstBtnHref,
+  secondBtn = false,
+  secondBtnText,
+  secondBtnHref,
+  disabled = false,
+} = Astro.props;
+---
+
+<div class="card">
+  <header class="card-image">
+    {img && <img src={src} alt={alt} />}
+  </header>
+  <div class="card-description">
+    <h3>{title}</h3>
+    <p>
+      {description}
+    </p>
+  </div>
+  <footer class="card-links">
+    {
+      firstBtn && (
+        <a href={firstBtnHref} class={`btn ${disabled ? "disabled" : ""}`}>
+          {firstBtnText}
+        </a>
+      )
+    }
+    {
+      secondBtn && (
+        <a href={secondBtnHref} class="btn">
+          {secondBtnText}
+        </a>
+      )
+    }
+  </footer>
+</div>
+
+<style>
+  .card {
+    border: 2px solid var(--card-border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    position: relative;
+    transition: background-color ease-in-out 0.4s;
+
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+  }
+
+  .card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+    transition: 0.2s linear;
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  .card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform ease-in-out 0.4s;
+  }
+
+  /* .card-image img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  } */
+
+  .card-description {
+    padding: 1rem;
+  }
+
+  .card-description h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-description p {
+    font-size: 0.9rem;
+    color: var(--card-description);
+  }
+
+  .card-links {
+    padding: 1rem;
+    display: flex;
+    gap: 10px;
+  }
+
+  .card-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .disabled {
+    cursor: no-drop;
+  }
+</style>

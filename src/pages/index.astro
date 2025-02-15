@@ -3,6 +3,9 @@ import Layout from "../layouts/Layout.astro";
 
 import Navbar from "../components/Navbar.astro";
 import Information from "../components/Information.astro";
+import Resources from "../components/Resources.astro";
+import Cards from "../components/Cards.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout pageTitle="Code-Path">
@@ -18,17 +21,30 @@ import Information from "../components/Information.astro";
 	    ejercicios prácticos y recursos adicionales que cubren una amplia variedad de temas relacionados con el desarrollo de software.`
     />
 
-    <h2 style="margin-top: 60px;">Recursos</h2>
-    <ul>
-      <li><a href="">Retos-HTML</a></li>
-      <li><a href="">Retos-CSS</a></li>
-    </ul>
+    <Resources />
 
-    <hr />
-    <h2>Apuntes</h2>
-    <ul>
-      <li><a href="notes/html/bloque-1/01-test">HTML</a></li>
-      <li><a href="notes/css/bloque-1/01-test">CSS</a></li>
-    </ul>
+    <Cards title="Apuntes">
+      <Card
+        title="HTML"
+        description="Apuntes relacionados con html"
+        firstBtn
+        firstBtnHref="notes/html/bloque-1/01-test"
+        firstBtnText="Ver Apuntes"
+      />
+      <Card
+        title="CSS"
+        description="Apuntes relacionados con css"
+        firstBtn
+        firstBtnHref="notes/css/bloque-1/01-test"
+        firstBtnText="Ver Apuntes"
+      />
+      <Card
+        title="JavaScript"
+        description="Apuntes relacionados con js"
+        firstBtn
+        firstBtnHref="/"
+        firstBtnText="Ver Apuntes"
+      />
+    </Cards>
   </div>
 </Layout>
