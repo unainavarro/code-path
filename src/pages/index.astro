@@ -2,23 +2,33 @@
 import Layout from "../layouts/Layout.astro";
 
 import Navbar from "../components/Navbar.astro";
+import Information from "../components/Information.astro";
 ---
 
 <Layout pageTitle="Code-Path">
   <header>
-    <Navbar src="/img/logos/logo-black.svg" alt="code logo" title="Code Path"/>
+    <Navbar src="/img/logos/logo-black.svg" alt="code logo" title="Code Path" />
   </header>
 
-  <h2 style="margin-top: 60px;">Recursos</h2>
-  <ul>
-    <li><a href="">Retos-HTML</a></li>
-    <li><a href="">Retos-CSS</a></li>
-  </ul>
+  <div class="bg-grid">
+    <Information
+      title="¿Qué encontraras?"
+      text=`Code Path es una web que recopila materiales útiles para aprender, practicar y mejorar en programación.
+	   Aquí encontrarás una combinación de apuntes teóricos,
+	    ejercicios prácticos y recursos adicionales que cubren una amplia variedad de temas relacionados con el desarrollo de software.`
+    />
 
-  <hr />
-  <h2>Apuntes</h2>
-  <ul>
-    <li><a href="notes/html/bloque-1/01-test">HTML</a></li>
-    <li><a href="notes/css/bloque-1/01-test">CSS</a></li>
-  </ul>
+    <h2 style="margin-top: 60px;">Recursos</h2>
+    <ul>
+      <li><a href="">Retos-HTML</a></li>
+      <li><a href="">Retos-CSS</a></li>
+    </ul>
+
+    <hr />
+    <h2>Apuntes</h2>
+    <ul>
+      <li><a href="notes/html/bloque-1/01-test">HTML</a></li>
+      <li><a href="notes/css/bloque-1/01-test">CSS</a></li>
+    </ul>
+  </div>
 </Layout>
