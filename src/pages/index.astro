@@ -1,9 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import Navbar from "../components/Navbar.astro";
 ---
 
-<Layout>
-  <h2>Recursos</h2>
+<Layout pageTitle="Code-Path">
+  <header>
+    <Navbar src="/img/logos/logo-black.svg" alt="code logo" title="Code Path"/>
+  </header>
+
+  <h2 style="margin-top: 60px;">Recursos</h2>
   <ul>
     <li><a href="">Retos-HTML</a></li>
     <li><a href="">Retos-CSS</a></li>
