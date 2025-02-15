@@ -1,6 +1,7 @@
 ---
 import Layout from "./Layout.astro";
 import NotesList from "../components/NotesList.astro";
+import Navbar from "../components/Navbar.astro";
 
 const pageTitle = "Apuntes HTML";
 
@@ -11,7 +12,11 @@ const sections = [
 ---
 
 <Layout pageTitle={pageTitle}>
-  <h2>HTML</h2>
+  <header>
+    <Navbar src="/img/logos/logo-black.svg" alt="code logo" title="Code Path" />
+  </header>
+
+  <h2 style="margin-top: 60px;">HTML</h2>
 
   {
     sections.map(
