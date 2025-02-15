@@ -1,0 +1,14 @@
+---
+const { title, files } = Astro.props;
+---
+
+<h3>{title}</h3>
+<ul>
+  {
+    files.map((note) => (
+      <li>
+        <a href={note.url}>{note.frontmatter.title}</a>
+      </li>
+    ))
+  }
+</ul>

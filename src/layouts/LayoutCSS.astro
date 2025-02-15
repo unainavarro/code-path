@@ -1,0 +1,33 @@
+---
+import Layout from "./Layout.astro";
+import NotesList from "../components/NotesList.astro";
+
+const pageTitle = "Apuntes CSS";
+
+const sections = [
+  await Astro.glob("../pages/notes/css/bloque-1/*.md"),
+  await Astro.glob("../pages/notes/css/bloque-2/*.md"),
+];
+---
+
+<Layout pageTitle={pageTitle}>
+  <h2>CSS</h2>
+
+  {
+    sections.map(
+      (files) =>
+        files.length > 0 && (
+          <NotesList title={files[0].frontmatter.block} files={files} />
+        )
+    )
+  }
+
+  <hr />
+  <slot />
+</Layout>
+
+<style>
+  h2 {
+    color: blue;
+  }
+</style>
