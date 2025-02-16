@@ -1,4 +1,6 @@
 ---
+import Card from "../components/Card.astro";
+import Cards from "../components/Cards.astro";
 import Information from "../components/Information.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
@@ -15,5 +17,21 @@ import Layout from "../layouts/Layout.astro";
       text=`Cada reto te presentará una situación real que deberás resolver utilizando HTML, 
       lo que te permitirá aplicar lo aprendido y adquirir nuevas habilidades.`
     />
+
+    <Cards title="HTML (Fácil)">
+      <Card
+        img
+        src="/img/challenges/default.png"
+        alt="Componente de inicio de sesión"
+        title="Login"
+        description="Formulario de registro básico."
+        firstBtn
+        firstBtnHref=""
+        firstBtnText="Demo"
+        secondBtn
+        secondBtnHref=""
+        secondBtnText="GitHub"
+      />
+    </Cards>
   </div>
 </Layout>
