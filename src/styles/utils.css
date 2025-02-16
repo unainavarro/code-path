@@ -45,3 +45,10 @@
   /* height: 100dvh; */
   padding-bottom: 200px;
 }
+
+.subrayado-fosforito {
+  background-color: #ffff00;
+  padding: 0.2em;
+  display: inline;
+  box-decoration-break: clone;
+}
