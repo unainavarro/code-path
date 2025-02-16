@@ -1,0 +1,19 @@
+---
+import Information from "../components/Information.astro";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout pageTitle="Retos de HTML">
+  <header>
+    <Navbar src="/img/logos/logo-black.svg" alt="code logo" title="Code Path" />
+  </header>
+
+  <div class="bg-grid">
+    <Information
+      title="Ejercicios HTML"
+      text=`Cada reto te presentará una situación real que deberás resolver utilizando HTML, 
+      lo que te permitirá aplicar lo aprendido y adquirir nuevas habilidades.`
+    />
+  </div>
+</Layout>
