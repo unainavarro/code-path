@@ -3,12 +3,36 @@ const { title, files } = Astro.props;
 ---
 
 <h3>{title}</h3>
-<ul>
+<ul class="list">
   {
-    files.map((note) => (
-      <li>
+    files.map((note: any) => (
+      <li class="list-item">
         <a href={note.url}>{note.frontmatter.title}</a>
       </li>
     ))
   }
 </ul>
+
+<style>
+  .resources {
+    margin-top: 20px;
+  }
+  .list {
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  .list-item a {
+    color: #333;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    transition: all 0.1s ease;
+    display: inline-block;
+    margin-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    text-decoration: underline;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+</style>
