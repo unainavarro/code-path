@@ -2,7 +2,7 @@
 const { title, files } = Astro.props;
 ---
 
-<h3>{title}</h3>
+<h3 class="title">{title}</h3>
 <ul class="list">
   {
     files.map((note: any) => (
@@ -14,6 +14,9 @@ const { title, files } = Astro.props;
 </ul>
 
 <style>
+  .title{
+    margin-bottom: 0px;
+  }
   .resources {
     margin-top: 20px;
   }

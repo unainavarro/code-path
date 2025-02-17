@@ -6,8 +6,8 @@ import Navbar from "../components/Navbar.astro";
 const pageTitle = "Apuntes HTML";
 
 const sections = [
-  await Astro.glob("../pages/notes/html/bloque-1/*.md"),
-  await Astro.glob("../pages/notes/html/bloque-2/*.md"),
+  await Astro.glob("../pages/notes/html/fundamentos/*.md"),
+  await Astro.glob("../pages/notes/html/cabecera/*.md"),
 ];
 ---
 
@@ -18,7 +18,7 @@ const sections = [
 
   <sections class="content-wrapper">
     <aside class="bg-grid">
-      <h2 style="margin: 60px 0 10px 0;">HTML</h2>
+      <h2 class="topic" style="">HTML</h2>
       <nav>
         {
           sections.map(
@@ -38,6 +38,13 @@ const sections = [
 </Layout>
 
 <style>
+  .topic {
+    margin: 60px 0 10px 0;
+    background-color: orange;
+    text-align: center;
+    color: black;
+  }
+
   .content-wrapper {
     display: grid;
     grid-template-columns: 1fr 5fr;

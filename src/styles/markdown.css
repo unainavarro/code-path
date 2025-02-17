@@ -1,5 +1,4 @@
 .markdown {
-  
   margin: 20px;
 }
 
@@ -24,6 +23,7 @@ ol {
 .markdown .glosario {
   ul {
     border-radius: 5px;
+    list-style: square;
   }
 
   li > a {
@@ -58,4 +58,16 @@ ol {
   overflow-x: auto;
   white-space: pre-wrap;
   margin: 10px 0;
+}
+
+.markdown code:not(pre code) {
+  background-color: #e7e7e7;
+  color: #d63384;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.markdown summary{
+  font-size: 24px;
 }
