@@ -1,0 +1,61 @@
+.markdown {
+  
+  margin: 20px;
+}
+
+.markdown h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+}
+
+.markdown ul,
+ol {
+  padding: 10px 20px;
+
+  li {
+    margin: 3px 0;
+  }
+}
+
+.markdown .glosario {
+  ul {
+    border-radius: 5px;
+  }
+
+  li > a {
+    color: var(--black);
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    transition: all 0.1s ease;
+    display: inline-block;
+    margin-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    text-decoration: underline;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.markdown blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+
+.markdown pre {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  padding: 40px;
+  border-radius: 5px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  margin: 10px 0;
+}

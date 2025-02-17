@@ -31,7 +31,7 @@ const sections = [
       </nav>
     </aside>
 
-    <main style="margin-top: 60px;">
+    <main class="markdown" style="margin-top: 60px;">
       <slot />
     </main>
   </sections>
@@ -39,21 +39,19 @@ const sections = [
 
 <style>
   .content-wrapper {
-    display: flex;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100dvh;
   }
 
   aside {
-    width: 250px;
-    /* background-color: #f4f4f4; */
+    max-width: 250px;
     padding: 20px;
-    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
     overflow-y: auto;
     border: 1px solid var(--black);
   }
 
   main {
-    flex-grow: 1;
     padding: 20px;
     overflow-y: auto;
   }
